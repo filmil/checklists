@@ -21,13 +21,14 @@
 
 % One procedure item
 \newcommand{\procitem}[2]{{#1}\dotfill{\textsc{#2}}\newline} 
+\newcommand{\plane}[1]{{\textbf{\textsf{#1}}}\newline} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Page layout
 \setlength{\parindent}{0em}
 \pagestyle{empty}
 \makechapterstyle{cheatsheet}{%
-  \renewcommand*{\chaptitlefont}{\Large\sffamily}
+  \renewcommand*{\chaptitlefont}{\bfseries\Large\sffamily}
   \renewcommand*{\chapterheadstart}{}
   \renewcommand*{\printchaptername}{}
   \renewcommand*{\chapternamenum}{}
@@ -41,16 +42,70 @@
 %%% Document titling
 
 \begin{multicols*}{4}
-  \textsc{Cessna 172SP \today\\[0.5em]}
+  \textsc{Cessna~172SP Checklist\\\today\\[0.5em]}
 
   \chapter{Preflight Inspection}
 
+  \plane{Cabin}
   \procitem{Pitot Tube Cover}{remove}
-  \procitem{Pilot's Operating Handbook}{available in plane}
+  \procitem{Pilot's Operating Handbook}{in plane}
   \procitem{Airplane Weight and Balance}{checked}
   \procitem{Parking Brake}{set}
+  \procitem{Control Wheel Lock}{remove}
+  \procitem{Ignition Switch}{off}
+  \procitem{Avionics Master Switch}{off}
+  \procitem{Master Switch}{on}
+  \procitem{Fuel Quantity Indicators}{%
+    check quantity, ensure low fuel annunciators (L and R) are extinguished}
+  \procitem{Avionics Master Switch}{on}
+  \procitem{Avionics Fooling Fan}{check audibly for operation}
+  \procitem{Avionics master switch}{off}
+  \procitem{Static Pressure Alternate Source Valve}{off}
+  \procitem{Annunciator Panel Switch}{%
+    place and hold in tst position, ensure all annunciators illuminate}
+  \procitem{Annunciator Panel Test Switch}{release}
+  \procitem{Fuel Selector Valve}{both}
+  \procitem{Fuel Shutoff Valve}{on}
+  \procitem{Flaps}{extend}
+  \procitem{Pitot heat}{on} Check that tube is warm to touch after 30 seconds.
 
+  \procitem{Pitot Heat}{off}
+  \procitem{Master Switch}{off}
+  \procitem{Elevator Trim}{set for takeoff}
+  \procitem{Baggage Door}{check, lock}
+  \procitem{Autopilot Static Source opening}{check for blockage}
 
+  \plane{Empennage}
+  \procitem{Rudder Gust Lock (if installed)}{remove}
+  \procitem{Tail Tie-Down}{disconnect}
+  \procitem{Control Surfaces}{check freedom of movement and security}
+  \procitem{Trim Tab}{check security}
+  \procitem{Antennas}{Check for security of attachment and general condition}
 
+  \plane{Right Wing Trailing Edge}
+  \procitem{Aileron}{check freedom of movement and security}
+  \procitem{Flap}{check for security and conditions}
+
+  \plane{Right Wing}
+  \procitem{Wing tie-down}{disconnect}
+  \procitem{Main Wheel Tire}{check}
+  \procitem{Fuel Tank Sump Drain}{drain}
+  \procitem{Fuel Quantity}{check visually}
+  \procitem{Fuel Filler Cap}{secure and vent unobstructed}
+
+  \plane{Nose}
+  \procitem{Fuel Strainer Quick Drain Valve}{drain}
+  \procitem{Engine Oil}{5qts--8qts}
+  \procitem{Engine Cooling Air Inlets}{clear}
+  \procitem{Propeller and spinner}{check nicks, security}
+  \procitem{Air Filter}{check}
+  \procitem{Nose Wheel Strut and Tire}{check inflation, condition}
+  \procitem{Left Static Source Opening}{check}
+
+  \plane{Passenger Briefing}
+  ?
+
+  \plane{Airspeeds}
+  
 \end{multicols*}
 \end{document}
