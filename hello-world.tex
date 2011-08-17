@@ -1,0 +1,56 @@
+%% Procedures for the Cessna 172SP
+%%
+%% Author:
+%%   Filip Miletic (filmil@gmail.com)
+%%
+%% WARNING: 
+%%   This was made for my personal use.  Not to be used in lieu of 
+%%   actual aircraft procedures from the approved flight manual or
+%%   pilot's operating handbook.
+
+\documentclass[article,9pt,landscape]{memoir}
+\usepackage{multicol,lipsum}
+\usepackage[  %% Letter paper, uses almost the entire paper surface
+  text={10.9in,8.3in},
+  centering,ignoreall]{geometry}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands
+
+% One procedure item
+\newcommand{\procitem}[2]{{#1}\dotfill{\textsc{#2}}\newline} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page layout
+\setlength{\parindent}{0em}
+\pagestyle{empty}
+\makechapterstyle{cheatsheet}{%
+  \renewcommand*{\chaptitlefont}{\Large\sffamily}
+  \renewcommand*{\chapterheadstart}{}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{}
+  \renewcommand*{\printchapternum}{}
+  \renewcommand*{\afterchapternum}{}
+  \renewcommand*{\beforechapskip}{0.5em}
+  \renewcommand*{\afterchapskip}{0.5em}
+}
+\chapterstyle{cheatsheet}
+
+%%% Document titling
+
+\begin{multicols*}{4}
+  \textsc{Cessna 172SP \today\\[0.5em]}
+
+  \chapter{Preflight Inspection}
+
+  \procitem{Pitot Tube Cover}{remove}
+  \procitem{Pilot's Operating Handbook}{available in plane}
+  \procitem{Airplane Weight and Balance}{checked}
+  \procitem{Parking Brake}{set}
+
+
+
+\end{multicols*}
+\end{document}

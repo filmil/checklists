@@ -1,0 +1,8 @@
+*.pdf
+*.dvi
+*.aux
+*.fls
+*.log
+*.ps
+*~
+.sconsign*
