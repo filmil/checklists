@@ -10,34 +10,12 @@
 
 \documentclass[article,9pt,landscape]{memoir}
 \usepackage{multicol,lipsum}
-\usepackage[  %% Letter paper, uses almost the entire paper surface
+\usepackage[ %% Letter paper, uses almost the entire paper surface
   text={10.9in,8.3in},
   centering,ignoreall]{geometry}
 
 \begin{document}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Commands
-
-% One procedure item
-\newcommand{\procitem}[2]{{#1}\dotfill{\textsc{#2}}\newline} 
-\newcommand{\plane}[1]{{\textbf{\textsf{#1}}}\newline} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Page layout
-\setlength{\parindent}{0em}
-\pagestyle{empty}
-\makechapterstyle{cheatsheet}{%
-  \renewcommand*{\chaptitlefont}{\bfseries\Large\sffamily}
-  \renewcommand*{\chapterheadstart}{}
-  \renewcommand*{\printchaptername}{}
-  \renewcommand*{\chapternamenum}{}
-  \renewcommand*{\printchapternum}{}
-  \renewcommand*{\afterchapternum}{}
-  \renewcommand*{\beforechapskip}{0.5em}
-  \renewcommand*{\afterchapskip}{0.5em}
-}
-\chapterstyle{cheatsheet}
+\input{preamble}
 
 %%% Document titling
 
@@ -102,10 +80,7 @@
   \procitem{Nose Wheel Strut and Tire}{check inflation, condition}
   \procitem{Left Static Source Opening}{check}
 
-  \plane{Passenger Briefing}
-  ?
+  \input{disclaimer}
 
-  \plane{Airspeeds}
-  
 \end{multicols*}
 \end{document}

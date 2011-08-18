@@ -1,0 +1,24 @@
+% -*- latex -*-
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands
+
+% One procedure item
+\newcommand{\procitem}[2]{{#1}\dotfill{\textsc{#2}}\newline} 
+\newcommand{\plane}[1]{{\textbf{\textsf{#1}}}\newline} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page layout
+\setlength{\parindent}{0em}
+\pagestyle{empty}
+\makechapterstyle{cheatsheet}{%
+  \renewcommand*{\chaptitlefont}{\bfseries\Large\sffamily}
+  \renewcommand*{\chapterheadstart}{}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{}
+  \renewcommand*{\printchapternum}{}
+  \renewcommand*{\afterchapternum}{}
+  \renewcommand*{\beforechapskip}{0.5em}
+  \renewcommand*{\afterchapskip}{0.5em}
+}
+\chapterstyle{cheatsheet}
