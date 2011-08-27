@@ -1,0 +1,188 @@
+%% Procedures for the Cessna 172SP
+%%
+%% Author:
+%%   Filip Miletic (filmil@gmail.com)
+%%
+%% WARNING: 
+%%   This was made for my personal use.  Not to be used in lieu of 
+%%   actual aircraft procedures from the approved flight manual or
+%%   pilot's operating handbook.
+
+\documentclass[article,9pt,landscape]{memoir}
+\usepackage{multicol,lipsum}
+\usepackage[ %% Letter paper, uses almost the entire paper surface
+  text={10.9in,8.3in},
+  centering,ignoreall]{geometry}
+
+\begin{document}
+\input{preamble}
+
+%%% Document titling
+
+\begin{multicols*}{4}
+  \textsc{Bay Area COM/NAV Cheat Sheet\\\today\\[0.5em]}
+
+  \chapter{Before Taxi}
+  Palo Alto Ground, Cessna 784SP\footnote{Your plane callsign.}.\\
+  Advantage aviation with [alpha/bravo/\dots/]\\
+  Taxi for takeoff, [right/left] departure.
+
+  \readback
+  Cessna 4SP\\
+  Runway three-one\footnote{Your runway.}, taxi
+  \{via the [terminal side/fuel island]\}.
+
+  \chapter{Before Takeoff}
+  Palo Alto Tower, Cessna 784SP.
+  Ready for takeoff, runway three-one.
+
+  \readback 
+  Cessna 4SP, runway three-one [hold short/line up and
+    wait/cleared for takeoff]
+
+  \chapter{Entering Class D (Airport w/Tower)}
+  Palo Alto tower, Cessna 784SP.
+  [Leslie Salt/SLAC] with [alpha/bravo/\dots/],
+  inbound for landing.
+
+  \readback
+  Cessna 4SP, make [right/left] traffic, runway three-one.
+
+  \chapter{Before landing}
+  
+  \readback
+  Cessna 4SP, cleared [to land/for the option], runway three-one.
+
+  \chapter{Clear of Runway}
+  Palo Alto ground, Cessna 784SP clear of the runway, taxi to
+  Advantage Aviation.
+
+  \readback
+  Cessna 4SP, taxi to parking \{via parallel and Kilo\}.
+
+  \chapter{Entering Class E/G (no tower)}
+  Palo Alto traffic, Cessna 784SP [Leslie Salt/SLAC] inbound for
+  landing, right traffic runway three-one, Palo Alto\footnote{Repeat
+    airport name.}
+
+  \chapter{In Pattern (no tower)}
+  Palo Alto traffic, Cessna 784SP [right/left] [45/ crosswind/
+    downwind/ base/ final/ short final] runway three-one, Palo Alto.
+
+  \chapter{Class B or C}
+  Norcal Approach, Cessna 784SP is a Cessna 172/Golf, VFR [altitude],
+  [position], request transition of class [B/ C] airspace to
+  [destination].
+
+  \readback 
+  Cessna 4SP, [route] [altitude] [cleared through the class
+    B/ C] [remain clear] [maintain VFR].
+
+  \chapter{Opening Flight Plan}
+  Oakland radio, Cessna 784SP listening 122.5
+
+  \readback
+  Cessna 4SP state your request.
+
+  \plane{Pilot} 
+  Cessna 784SP, please open my VFR flight plan from Palo
+  Alto to [destination], time off [10] minutes past the hour.
+  
+  \chapter{Bay Area Airports}
+
+  \plane{Palo Alto Municipal (KPAO)}
+  \procitem{ATIS}{135.275}
+  \procitem{Tower}{118.600}
+  \procitem{Ground}{125.000}
+  \procitem{UNICOM}{122.850}
+  \procitem{Chevron UNICOM}{122.950}
+  \procitem{Elev}{4 (804E/1004W)}
+  \procitem{Left traffic}{13}
+  \procitem{Right traffic}{31}
+
+  \plane{Livermore Muni (KLVK)}
+  \procitem{ATIS}{119.650}
+  \procitem{Tower 1}{118.100}
+  \procitem{Tower 2 (sometimes in use)}{128.200}
+  \procitem{Ground}{121.600}
+  \procitem{UNICOM}{122.950}
+  \procitem{Elev}{400 (1400)}
+  \procitem{Left traffic}{7L, 25L}
+  \procitem{Right traffic}{7R, 25R}
+  
+  \chapter{Bay Area VOR}
+
+  \plane{Concord}
+  \procitem{ID}{CCR}
+  \procitem{Frequency}{117.00}
+  \procitem{Morse}{\morse{-.-. -.-. .-.}}
+
+  \plane{Manteca}
+  \procitem{ID}{ECA}
+  \procitem{Frequency}{116.000}
+  \procitem{Morse}{\morse{. -.-. .-}}
+
+  \plane{Oakland}
+  \procitem{ID}{OAK}
+  \procitem{Frequency}{116.800}
+  \procitem{Morse}{\morse{--- .- -.-}}
+
+  \plane{Point Reyes}
+  \procitem{ID}{PYE}
+  \procitem{Frequency}{113.700}
+  \procitem{Morse}{\morse{.--. -.-- .}}
+  
+  \plane{San Francisco}
+  \procitem{ID}{SFO}
+  \procitem{Frequency}{115.800}
+  \procitem{Morse}{\morse{... ..-. ---}}
+
+  \plane{San Jose}
+  \procitem{ID}{SJC}
+  \procitem{Frequency}{114.100}
+  \procitem{Morse}{\morse{... .--- -.-.}}
+
+  \plane{Scaggs Island}
+  \procitem{ID}{SGD}
+  \procitem{Frequency}{112.10}
+  \procitem{Morse}{\morse{... --. -..}}
+
+  \plane{Sausalito}
+  \procitem{ID}{SAU}
+  \procitem{Frequency}{116.200}
+  \procitem{Morse}{\morse{... .- ..-}}
+
+  \plane{Woodside}
+  \procitem{ID}{OSI}
+  \procitem{Frequency}{113.90}
+  \procitem{Morse}{\morse{--- ... ..}}
+
+  \chapter{Bay Area Radio}
+
+  \procitem{Oakland}{122.500}
+  \procitem{International distress}{121.500}
+  \procitem{NUQ DME (Moffet)}{117.600}
+
+  \chapter{Bay Area Vectors}
+  \procitem{OSI to PAO}{048 @ 9.0NM}
+  \procitem{SJC to PAO}{288 @ 9.6NM}
+
+  \input{disclaimer}
+\end{multicols*}
+\end{document}
+
+%% VOR template
+%% \plane{}
+%% \procitem{ID}{}
+%% \procitem{Frequency}{}
+%% \procitem{Morse}{\morse{}}
+
+%% RWY template
+%% \plane{ ()}
+%% \procitem{ATIS}{}
+%% \procitem{Tower}{}
+%% \procitem{Ground}{}
+%% \procitem{UNICOM}{}
+%% \procitem{Elev}{4 ()}
+%% \procitem{Left traffic}{}
+%% \procitem{Right traffic}{}
