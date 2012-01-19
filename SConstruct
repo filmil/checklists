@@ -22,6 +22,3 @@ def latex_dependency(base_name, *other_files):
 latex_dependency(
     'c172sp-preflight-checklist', 
     'preamble', 'disclaimer')
-latex_dependency(
-    'comm-phrases', 
-    'preamble', 'disclaimer')
