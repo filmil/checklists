@@ -1,4 +1,8 @@
-% -*- latex -*-
+%% -*- latex -*-
+%%
+%% The preamble file.
+%%
+%% The preamble file is included after \begin{document}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Commands
@@ -13,6 +17,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Page layout
 \setlength{\parindent}{0em}
+\setlength{\itemsep}{4em}
+\tightlists
 \pagestyle{empty}
 \makechapterstyle{cheatsheet}{%
   \renewcommand*{\chaptitlefont}{\bfseries\Large\sffamily}
@@ -25,9 +31,3 @@
   \renewcommand*{\afterchapskip}{0.5em}
 }
 \chapterstyle{cheatsheet}
-
-%% Acronym list
-
-\begin{acronym}
-  \acro{mca}[MCA]{Minimum Controllable Airspeed}
-\end{acronym}
