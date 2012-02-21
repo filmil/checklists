@@ -23,5 +23,8 @@ latex_dependency(
     'c172sp-preflight-checklist', 
     'preamble', 'disclaimer')
 latex_dependency(
+    'comm-phrases', 
+    'preamble', 'disclaimer')
+latex_dependency(
     'checkride-cheatsheet', 
     'preamble', 'disclaimer')
