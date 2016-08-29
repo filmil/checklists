@@ -1,3 +1,5 @@
+*NOTE*:  This repository is obsolete.  I no longer rely on it for anything.
+
 This is a collection of aircraft checklists, intended for personal use.
 
 You are free to download and adapt for your use.  However, DO NOT use
